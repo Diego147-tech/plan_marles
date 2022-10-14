@@ -1,0 +1,40 @@
+header{  /*Cabezera de decoracion */
+    background-color: rgba(248, 248, 2, 0.801);
+    padding: 40px 30px;
+    margin: -15px -15px 40px -15px;
+}
+
+body{  /*Cuerpo del html*/
+    background-color: azure;
+}
+
+#lok{ /*Cuadro en general del cuerpo*/
+    margin-left: 20%;
+    font-family: inherit;
+}
+ 
+h1{  /*Titulos principales*/
+    color: red;
+    font-size: 50px;
+    margin-left: -40px;
+    margin-bottom: 10px;
+}
+
+h2{  /* Subtitulos principales*/
+    font-size: 30px;
+}
+
+#lok input{ /*Cuadro de cuerpo para las barras de texto*/
+    font-size: 18px;
+
+}
+#job, #jab{  /*Boton*/
+    background-color: cadetblue;
+    border-radius: 8px;
+    color: black;
+}
+
+#job:hover, #jab:hover{ /* Decoracion del boton*/
+    background-color: transparent;
+    border: 2px solid;
+}

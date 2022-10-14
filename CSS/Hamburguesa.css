@@ -1,0 +1,46 @@
+header{  /*Cabezera de decoracion */
+    background-color: #4f67dfd7;
+    padding: 40px 30px;
+    margin: -15px -15px 40px -15px;
+}
+body{  /*Color al cuerpo del html*/
+    background-color: rgb(241, 232, 232);
+}
+h1{  /*Titulos principales*/
+    font-family: Georgia;
+    margin-left: -100px;
+    font-size: 40px;
+    color: rgb(235, 31, 31);
+}
+h2{  /* Subtitulos principales*/
+    font-family: Georgia;
+    margin-left: -40px;
+}
+#selec{ /* Mover generalmente todo el contenido*/
+    margin-left: 20%;
+    font-family: Geneva;
+}
+
+#lef{ /*Boton */
+    margin-left: 150px;
+    border-radius: 40px;
+    background-color: rgba(228, 177, 177, 0.603);
+    color: black;
+    text-align: center;
+    font-size: 20px;
+}
+
+#lef:hover{ /*Decoracion boton*/
+    background-color: transparent;
+    border: 2px solid black;
+    color: black;
+}
+
+#pedido{  /*Cuadro de texto de respuesta*/
+    margin-top: -8cm;
+    margin-left: 400px;
+}
+#pedido h2{  /*Titulo del cuadro de texto de respuesta*/
+    margin: 10px;
+    margin-top: 20px;
+}

@@ -1,0 +1,57 @@
+header{  /*Cabezera de decoracion */
+    background-color: #a1a8ccd7;
+    padding: 40px 30px;
+    margin: -15px -15px 60px -15px;
+}
+body{   /*Color al cuerpo del html*/
+    background-color: rgba(236, 202, 202, 0.356);
+}
+h1{ /*Titulos principales*/
+    color: rgb(243, 41, 41);
+}
+h2{  /* Subtitulos principales*/
+    margin-top: 30px;
+    margin-left: 30px;
+}
+#boton1, #boton21, #boton22, #boton23, #boton31, #boton32, #boton33{  /*PRIMEROS CUADROS DE TEXTO EN LAS 3 FORMULAS*/
+    margin-left: 30px;
+}
+/* Tecercer boton decoracion*/
+.luk1, .luk2, .luk3{
+    border-radius: 40px;
+    background-color: wheat;
+    color: black;
+    text-align: center;
+}
+
+.luk1:hover, .luk2:hover, .luk3:hover{ /*Tercer boton*/
+    background-color: transparent;
+    border: 2px solid black;
+    color: black;
+}
+/* Segundo boton decoracion*/
+.los1, .los2, .los3{
+    border-radius: 40px;
+    background-color: wheat;
+    color: black;
+    text-align: center;
+}
+
+.los1:hover, .los2:hover, .los3:hover{ /*Segundo boton*/
+    background-color: transparent;
+    border: 2px solid black;
+    color: black;
+}
+/* Primer boton decoracion*/
+.l1{
+    border-radius: 40px;
+    background-color: wheat;
+    color: black;
+    text-align: center;
+}
+
+.l1:hover{ /*Primer boton*/
+    background-color: transparent;
+    border: 2px solid black;
+    color: black;
+}

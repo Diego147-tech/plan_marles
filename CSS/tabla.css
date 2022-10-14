@@ -1,0 +1,29 @@
+header{  /*Cabezera de decoracion */
+    background-color: blue;
+    padding: 40px 30px;
+    margin: -15px -15px 40px -15px;
+}
+
+h1{  /*Cuadro en general para el cuerpo*/
+    margin-left: 5%;
+    color: red;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 35px;
+}
+
+#los{ /*Cuadro de texto unico*/
+    margin-left: 80px;
+    font-size: 20px;
+}
+#lik{   /*Boton*/
+    font-size: 18px;
+    margin-left: 8px;
+    background-color: rgba(101, 219, 101, 0.712);
+    border: 2px solid;
+    border-radius: 8px;
+}
+
+#lik:hover{  /* Decoracion del boton*/
+     background-color: transparent;
+     color: black;
+}

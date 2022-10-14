@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+   <head>
+    <link rel="StyleSheet" type="text/css" href="CSS/notas.css">  <!--Docuemento Css para maquillaje-->
+    <script type="text/JavaScript" src="Java/notas.js"></script>  <!--Docuemento de js-->
+    <title> Notas del estudiante </title>  <!--Titulo de pagina-->
+   </head>
+  
+   <header>
+    <!--Espacio de relleno en decoracion-->
+   </header>
+
+<main>  <!--Funcion obligatoria porque se utiliza header-->
+    <body>  <!--CUERPO-->
+    <form name="estudiantes" id="sol">  <!--Clase para mover toda la seccion-->
+        <h1> Notas de Estudiantes </h1>
+        <h2> Nombre del estudiante:</h2>
+        <input type="text" name="nombre" size="30"><!--Nombre del estudiante-->
+        <h2> Digite la Primera nota </h2>
+        <input type="text" name="nota1" size="12"> <!--Nota 1-->
+        <h2> Digite la Segunda nota </h2>
+        <input type="text" name="nota2" size="12"> <!--Nota 2-->
+        <h2> Digite la Tercera nota </h2>
+        <input type="text" name="nota3" size="12">  <!--Nota 3-->
+        <h2> Digite la Cuarta nota </h2>
+        <input type="text" name="nota4" size="12"> <!--Nota 4-->
+        <h2> Digite la Quinta nota </h2>
+        <input type="text" name="nota5" size="12"> <!--Nota 5-->
+        <input id="boton" type="button" value="Confirmar" onclick="note()"> <!--BOTON-->
+    <!-- Resultados-->
+<div id="resultados"> <!--Clase para mover toda esta seccion de resultados-->
+    <h1> Resultados </h1>
+    <label> Porcentaje de nota 1: <input type="text" name="note1" size="7"></label><br> <!--Nota 1-->
+    <label> Porcentaje de nota 2: <input type="text" name="note2" size="7"></label><br> <!--Nota 2-->
+    <label> Porcentaje de nota 3: <input type="text" name="note3" size="7"></label><br> <!--Nota 3-->
+    <label> Porcentaje de nota 4: <input type="text" name="note4" size="7"></label><br> <!--Nota 4-->
+    <label> Porcentaje de nota 5: <input type="text" name="note5" size="7"></label><br> <!--Nota 4¿5-->
+    <label> La definitiva es: <input type="text" name="definitiva" size="25"></label><br> <!--Definitiva general de todas las notas-->
+</div>    
+    </form>
+    </body>  <!--FINAL DE CUERPO-->
+</main>
+</html> <!--Final HTML-->

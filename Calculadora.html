@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+    <head>
+    <link rel="StyleSheet" type="text/css" href="CSS/Calculadora_2.css"> <!--Documento Css para maquillaje-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-compatible" content="IE=edge">
+    <meta name="viewport" content="width=devise-width, initial-scale=1.0">
+    <script type="text/javaScript" src="Java/Calculadora.js"></script> <!--Java para Division-->
+    <title> CALCULADORA </title>
+    </head>
+  <header>
+    <p>    </p> <!--Espacio de decoracion para cabezera-->
+  </header> 
+  <body>
+    <div class="recuadro"> <!--Cuadro de biñeta -->
+        <h1> Ejercicios </h1>
+        <ul>
+            <li><a href="#resta1"> Resta </a></li> <!--Resta-->
+            <li><a href="#suma1"> Suma </a></li> <!--Suma-->
+            <li><a href="#multiplicacion1"> Multiplicacion </a></li> <!--Multiplicacion-->
+            <li><a href="#division1"> Division </a></li> <!-- Division-->
+            <li><a href="#modulo1"> Modulo </a></li> <!-- Modulo-->
+        </ul>
+    </div>
+<div id="operaciones"> <!--Clase para mover completamente todo el cuadro-->
+    <h1> Para hacer Resta</h1>
+    <form name="form1" id="resta1"> <!--Seccion para hacer resta linea 30 a 35-->
+        <input id="res" type="text" name="numero1" size="10">
+        <input type="text" name="numero2" size="10">
+        <input id="botonR" type="button" value="Restar" onclick="resta()"> <!--Boton para activar-->
+        <input type="text" name="resultado" size="10">
+    </form>
+    
+ <br>
+ <br>
+    <h1> Para hacer Suma </h1>
+    <form name="form2" id="suma1"> <!--Seccion para hacer suma linea 40 a 45-->
+        <input id="sum" type="text" name="numero1" size="10">
+        <input type="text" name="numero2" size="10">
+        <input id="boton2"type="button" value="Sumar" onclick="suma()"> <!--Boton para activar-->
+        <input type="text" name="resultado" size="10">
+    </form>
+<br>
+<br>
+<h1> Para hacer Multiplicación </h1>
+    <form name="form3" id="multiplicacion1">  <!--Seccion para hacer Multiplicacion linea 49 a 54-->
+        <input id="multi" type="text" name="numero1" size="10">
+        <input type="text" name="numero2" size="10">
+        <input id="boton3" type="button" value="Multiplicar" onclick="multiplicacion()">  <!--Boton para activar-->
+        <input type="text" name="resultado" size="10">
+    </form>
+<br>
+<br>
+<h1> Para hacer División </h1>
+   <form name="form4" id="division1">  <!--Seccion para hacer division linea 58 a 63-->
+    <input id="division" type="text" name="numero1" size="10">
+    <input type="text" name="numero2" size="10">
+    <input id="boton4" type="button" value="Dividir" onclick="dividir()">  <!--Boton para activar-->
+    <input type="text" name="resultado" size="10">
+   </form>
+<br>
+<br>
+<h1> Para hacer Modulo</h1>
+   <form name="form5" id="modulo1">  <!--Seccion para hacer suma modulo 67 a 72-->
+    <input id="modulo" type="text" name="numero1" size="10">
+    <input type="text" name="numero2" size="10">
+    <input id="boton5" type="button" value="Modulo" onclick="lok()">  <!--Boton para activar-->
+    <input type="text" name="resultado" size="10">
+   </form>
+<br>
+<br>
+</div>
+  </body>
+</html> <!--Cierre Html-->

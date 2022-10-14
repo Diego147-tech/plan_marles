@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+   <head>
+    <link rel="StyleSheet" type="text/css" href="CSS/convercion.css"> <!--Docuemento Css para maquillaje-->
+    <script type="text/JavaScript" src="Java/convercion.js"></script>  <!--Documento de js-->
+    <title> Convertir </title>  <!--Titulo de pagina-->
+   </head>
+
+   <header>
+   <!--Espacio de relleno en decoracion-->
+   </header>
+<main>  <!--Funcion obligatoria porque se utiliza header-->
+    <body>  <!--CUERPO-->
+    <div id="colspan">    <!--Clase para mover toda la seccion-->
+      <form name="convertir" id="job">
+        <h1> Coversión de Metros:</h1>
+    <!-- Primera opcion de convertir-->
+        <h2> Metros a Kilometros</h2>
+        <input type="text" name="valor" size="10">  <!--Numero ingresado por teclado-->
+        <input id="boton1" type="button" value="Convertir" onclick="kilo()"> <!--Boton-->
+        <label> Dado en Km: <input type="text" name="respuesta" size="15"></label>  <!--Resultado-->
+      </form>
+      <br> 
+    <!--Segunda opcion para convertir-->
+      <form name="convertir2" id="job">
+        <h2> Metros a Decametros</h2>
+        <input type="text" name="valor" size="10">  <!--Numero ingresado por teclado-->
+        <input id="boton2" type="button" value="Convertir" onclick="deca()"> <!--Boton-->
+        <label> Dado en Dcm: <input type="text" name="respuesta" size="15"></label>  <!--Resultado-->
+      </form>
+    <br>
+    <!--Tercera opcion para convertir-->
+      <form name="convertir3" id="job">
+        <h2> Metros a Decimetros</h2>
+        <input type="text" name="valor" size="10">  <!--Numero ingresado por teclado-->
+        <input id="boton3" type="button" value="Convertir" onclick="deci()"> <!--Boton-->
+        <label> Dado en Dci: <input type="text" name="respuesta" size="15"></label> <!--Resultado-->
+      </form>
+    <br>
+    <!--Cuarta opcion para convertir-->
+      <form name="convertir4" id="job">
+        <h2> Metros a Centimetros</h2>
+        <input type="text" name="valor" size="10">  <!--Numero ingresado por teclado-->
+        <input id="boton4" type="button" value="Convertir" onclick="cent()"> <!--Boton-->
+        <label> Dado en Cm: <input type="text" name="respuesta" size="15"></label> <!--Resultado-->
+      </form>
+    </div>
+    </body>  <!-- FINAL CUERPO-->
+</main>
+</html> <!--Final HTML-->

@@ -1,0 +1,17 @@
+header{ /*Cabezera de decoracion */
+    background-color: rgb(84, 84, 231);
+    padding: 40px 30px;
+    margin: -10px -10px 30px -10px;
+}
+
+body{ /*Cuerpo del html*/
+    background-color: rgba(235, 234, 233, 0.788);
+}
+
+h1{  /*Titulos principales*/
+    font-size: 40px;
+    margin-left: 20%;
+    color: red;
+    font-family: sans-serif;
+}
+

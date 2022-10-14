@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+  <head>
+    <link rel="StyleSheet" type="text/css" href="CSS/Hamburguesa.css">  <!--Documento Css para maquillaje-->
+    <script type="text/JavaScript" src="Java/Hamburguesa.js"></script>  <!--Documento de js-->
+    <title> Hamburguesas </title>  <!--Titulo de pagina-->
+  </head>
+
+  <header>
+    <p>     </p> <!--Espacio de relleno en decoracion-->
+  </header>
+
+<main>  <!--Funcion obligatoria porque se utiliza header-->
+    <body> <!--CUERPO-->
+  <div id="selec">  <!--Clase para mover toda la seccion-->
+        <h1> Selecciona tu Tipo de  Hamburguesa </h1>
+        <h2> Seleccione lo que va a llevar la Hamburguesa </h2>
+        <h3> TIPO DE HAMBURGUESA:</h3> <!--Primera Pregunta-->
+        <form name="pre1">  
+            <label><input type="radio" id="r1" name="pregunta1" value="pan" required> Hamburguesa con Pan</label><br>  <!--Opcion 1-->
+            <label><input type="radio" id="r2" name="pregunta1" value="cebolla"required> Hamburguesa de Platano</label> <!--Opcion 2-->
+          </form>
+        <!-- Quieres con cebolla-->
+        <h3> QUIERES CON CEBOLLA?</h3> <!--Pregunta 2-->
+        <form name="pre2">
+            <label><input type="radio" id="r3" name="pregunta2" value="concebolla" required> Con Cebolla</label><br> <!--Opcion 1-->
+            <label><input type="radio" id="r4" name="pregunta2" value="sincebolla"required> Sin Cebolla </label> <!--Opcion 2-->
+        </form> 
+        <!-- Quieres con cebolla-->
+        <h3> QUIERES CON RIPPI?</h3> <!--Pregunta 3-->
+        <form name="pre3">
+            <label><input type="radio" id="r5" name="pregunta3" value="conrippi" required> Con Rippi</label><br> <!--Opcion 1-->
+            <label><input type="radio" id="r6" name="pregunta3" value="sinrippi"required> Sin Rippi</label>  <!--Opcion 2-->
+        </form>
+        <!-- Quieres con cebolla-->
+        <h3> LA QUIERES CON SALSA?</h3>  <!--Pregunta 4-->
+        <form name="pre4">
+            <label><input type="radio" id="r7" name="pregunta4" value="consalsa" required> Con Salsa</label><br> <!--Opcion 1-->
+            <label><input type="radio" id="r8" name="pregunta4" value="sinsalsa" required> Sin Salsa</label><br>  <!--Opcion 2-->
+            <input id="lef" type="button" value="HacerPedido" onclick="hambur()"> <!--Boton para activar-->
+        </form>
+  </div>  
+      </body> <!--FINAL DE CUERPO-->
+</main>
+</html> <!--Final HTML-->

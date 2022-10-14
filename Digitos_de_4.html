@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+    <head>
+       <link rel="StyleSheet" type="text/css" href="CSS/digitos_de_4.css"> <!--Docuemento Css para maquillaje-->
+       <script type="text/JavaScript" src="Java/digitos_de_4.js"></script>  <!--Documento de js-->
+       <title> Cuatro numeros </title>  <!--Titulo de pagina-->
+    </head>
+
+    <header> <!-- Posicion para decoracion-->
+
+    </header>
+<!-- Cambio a cuerpo de proyecto-->
+<main>  <!--Funcion obligatoria porque se utiliza header-->
+    <body> <!--CUERPO-->
+    <form name="numero" id="comp">  <!--Clase para mover todo generalmente-->
+        <h1> Mayor y Menor de 4 numeros </h1>
+        <h2> Digite su Primer número </h2>
+        <input type="text" name="numero1" size="19"> <!--Ingresa por teclado numero 1-->
+        <h2> Digite su Segundo número </h2>
+        <input type="text" name="numero2" size="19"> <!--Ingresa por teclado numero 2-->
+        <h2> Digite su Tercer numero </h2>
+        <input type="text" name="numero3" size="19"> <!--Ingresa por teclado numero 3-->
+        <h2> Digite su Cuarto numero </h2>
+        <input type="text" name="numero4" size="19"> <!--Ingresa por teclado numero 4-->
+    <!-- Boton de proyecto-->
+        <input id="ban"type="button" value="respuesta" onclick="doble()"> <!-- Boton de proyecto-->
+    <!-- Resultados -->
+    <div id="comp2"> <!--Clase para mover los resultados-->   
+        <h2> Número Mayor </h2>  
+        <input id="mayor"type="text" name="mayor" size="18">  <!-- Numero mayor-->
+        <h2> Número Menor </h2>
+        <input id="menor" type="text" name="menor" size="18"> <!--Numero menor-->
+    </div>
+    </form>
+    </body>  <!-- FINAL CUERPO-->
+</main>
+</html> <!--Final HTML-->

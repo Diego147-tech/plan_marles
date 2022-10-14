@@ -1,0 +1,38 @@
+header{ /*Cabezera de decoracion */
+    background-color: #a1a8ccd7;
+    padding: 40px 30px;
+    margin: -15px -15px 40px -15px;
+}
+
+#luna{ /*Para contenido de pagina*/
+    margin-left: 25%;
+    font-family:  Geneva;
+}
+
+#luna input{  /*Cuadros de texto ubicacion*/
+    padding: 7px 15px;
+}
+
+#boton{ /*Boton*/
+    margin-left: 10px;
+    font-family: 'Times New Roman';
+    border-radius: 12px;
+    font-size: 15px;
+    background-color: rgba(147, 147, 236, 0.664);
+    color: black;
+}
+
+#boton:hover{ /*decoracion de boton*/
+    background-color: transparent;
+    border: 2px solid black;
+    color: black;
+}
+h1{ /*Titulos principales*/
+    color:rgb(73, 62, 62);
+    font-size: 50px;
+    margin-left: -28px;
+}
+h2{   /* Subtitulos principales*/
+    font-size: 25px;
+}
+

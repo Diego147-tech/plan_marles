@@ -1,0 +1,36 @@
+header{ /*Cabezera de decoracion */
+    background-color: #435ac9d7;
+    padding: 50px 30px;
+    margin: -15px -15px 40px -15px;
+}
+
+h1{  /*Titulos principales*/
+    color: rgba(214, 57, 57, 0.774);
+    margin-left: -76px;
+    font-size: 40px;
+}
+h2{ /* Subtitulos principales*/
+    margin-left: -26px;
+    font-size: 24px;
+}
+#ban{   /*Boton*/
+    color: black;
+    background-color: rgba(192, 155, 155, 0.671);
+    border-radius: 15px;
+    font-size: 17px;
+    margin-left: 10px;
+}
+
+#ban:hover{  /* Decoracion del boton*/
+    background-color: transparent;
+    border: 2px solid black;
+    color: black;
+}
+#comp{  /*Cuadro en general del cuerpo*/
+    margin-left: 17%;
+    font-family: Geneva;
+}
+#comp2{  /* Cuadro general de resultados*/
+    margin-left: 36%;
+    margin-top: -15%;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+    <head> 
+        <link rel="StyleSheet" type="text/css" href="CSS/facturar.css"> <!--Docuemento Css para maquillaje-->
+        <script type="text/JavaScript" src="Java/facturar.js"></script>  <!--Documento de js-->
+        <title> FACTURA</title>  <!--Titulo de pagina-->
+    </head>
+    <header>
+        <!--Espacio de relleno en decoracion-->
+    </header>
+
+<main> <!--Funcion obligatoria porque se utiliza header-->
+    <body> <!--CUERPO-->
+<div id="fat"> <!--Clase para mover toda la seccion-->
+    <h1> Factura de Servicio </h1> <!--Titulo principal-->
+    <h2> Articulos de compra </h2>
+    <form name="fact">  
+        <h2> Que articulo deseas Comprar?</h2> 
+        <input type="text" name="articulo" size="30"> <!--Primera Pregunta-->
+        <h2> Codigo del articulo </h2> 
+        <input type="text" name="codarticulo" size="18"> <!--Pregunta 2-->
+        <h2> Despcripcion del articulo </h2> 
+        <input type="text" name="desarticulo" size="18"> <!--describir articulo-->
+        <h2> Valor del articulo </h2>
+        <input type="text" name="varticulo" size="18"> <!--Valor del articulo-->
+        <h2> Cantidad de articulos que desea? </h2>
+        <input type="text" name="cantidad" size="8">  <!--Numero de articulos-->
+        <input id="liz" type="button" value="Calcular Precio" onclick="nota()"> 
+<div id="valor">    <!--Clase para mover toda la seccion desde linea 28 a 37-->
+        <h2> Valor total </h2>
+        <input type="text" name="valortotal" size="18"> <!--Valor total despues del numero de articulos-->
+    <form name="formas">   
+        <h2> Formas de Pago </h2>
+        <label><input type="radio" name="pagar" id="male" value="pago1" size="18">En Efectivo</label><br> <!--OPCION DE PAGO 1-->
+        <label><input type="radio" name="pagar" id="famale" value="pago2" size="18">SiteCredito</label><br> <!--OPCION DE PAGO 2-->
+        <label><input type="radio" name="pagar" id="fomale" value="pago3" size="18">Tarjeta de credito</label><br> <!--OPCION DE PAGO 3-->
+        <input id="loz" type="button" value="confirmar" onclick="nota()"> <!--BOTON-->
+    </form>
+        <h2> Resultado </h2>
+        <input type="text" name="resultaf" size="22"> <!--Resultado final despues del pago-->
+</div>
+    </form>
+</div>
+    </body> <!--FINAL DE CUERPO-->
+</main>
+</html>  <!--Final HTML-->

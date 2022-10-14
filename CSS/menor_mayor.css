@@ -1,0 +1,31 @@
+header{   /*Decoracion barra superior del html*/
+    background-color: #a1a8ccd7;
+    padding: 30px 30px;
+    margin: -15px -15px 30px -15px;
+}
+body{   /*Decoracion del cuerpo*/
+    background-color: whitesmoke;
+}
+h1{  /*Titulo principal*/
+    text-align: center;
+    margin: 0px 0px 30px -230px;
+    color: rgb(66, 58, 58);
+
+}
+#contenido{    /*Mover generalmente todo el contenido*/
+    width: 50%;
+    white-space: 200px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: -10px;
+    margin: 0px 0px 0px 200px;
+}
+#contenido h2{   /*Titulos dentro del contenido*/
+    text-align: center;
+    margin: 20px 0px 0px -200px;
+    font-family:  Geneva;
+}
+#contenido input{   /* Mover a gusto las casillas de texto*/
+    margin: 20px -110px 0px 120px;
+}

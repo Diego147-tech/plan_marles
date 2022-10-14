@@ -1,0 +1,96 @@
+header{    /*Decoracion barra superior del html*/
+    background-color: #a1a8ccd7;
+    padding: 30px 30px;
+    margin: -15px -15px 0px -15px;
+}
+
+body{ /*Decoracion cuerpo*/
+    background-color: rgba(216, 201, 187, 0.116);
+}
+
+.recuadro h1{ /*Recuadro a mano izquierda*/
+    color: black;
+}
+.recuadro{  /*Recuadro de texto*/
+    background: rgba(53, 50, 50, 0.349);
+    text-align: center;
+    width: 15%;
+    padding-top: 10px;
+    padding-right: 80px;
+    padding-bottom: 10px;
+    padding-left: 0px;
+    margin: 20px 0px 0px 60px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.recuadro li{  /*Recuadro seccion de lista */
+    list-style: none;
+    font-size: 20px;
+    text-align: left;
+}
+.recuadro a{  /*Recuadro links*/
+    color: rgba(0, 0, 255, 0.801);
+    text-decoration: none;
+}
+
+#operaciones{  /*Calculadora cuerpo general*/
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: -230px 0px 0px 15px;
+    
+}
+#operaciones h1{   /*Titulos dentro de la calculadora*/
+    text-align: left;
+    margin: 0px 0px 20px 440px;
+    color:black;
+}
+
+#operaciones input{   /* Cuadros de texto de la calculadora*/
+    text-decoration: none;
+    font-weight: 5;
+    font-size: 20px;
+    color: black;
+    padding-top: 1px;
+    padding-bottom: 1x;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#res{   /*Cuadro de texto 1 en resta*/
+    margin: 0px 0px 0px 250px;
+}
+#sum{ /*Cuadro de texto 1 en suma*/
+    margin: 0px 0px 0px 250px;
+}
+#multi{  /*Cuadro de texto 1 en multiplicacion*/
+    margin: 0px 0px 0px 288px;
+}
+#division{  /*Cuadro de texto 1 en division*/
+    margin: 0px 0px 0px 254px;
+}
+#modulo{   /*Cuadro de texto 1 en modulo*/
+    margin: 0px 0px 0px 254px;
+}
+
+html{   /*General del documento*/
+   scroll-behavior: smooth; 
+}
+
+h1{  /*Titulos de manera general*/
+    font-family: 'Dancing Script', cursive;
+}
+
+
+#botonR, #boton2, #boton3, #boton4, #boton5 {  /*Botones para activar los javas*/
+    margin: 0px 20px 0px 10px;
+    font-family: 'Times New Roman';
+    border-radius: 90px;
+    background-color: rgba(128, 128, 128, 0.534);
+    color: black;
+    text-align: center;
+}
+
+#botonR:hover, #boton2:hover, #boton3:hover, #boton4:hover, #boton5:hover {  /*Decoracion de los botones*/
+    background-color: transparent;
+    border: 2px solid black;
+    color: black;
+}

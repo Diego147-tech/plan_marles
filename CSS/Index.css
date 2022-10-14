@@ -1,0 +1,42 @@
+head body{   /*Color para el cuerpo y cabezera en general*/
+    background-color: white;
+}
+
+h1{  /*Titulo principal del html*/
+    color: black;
+    margin: 10px 10cm 50px 10cm;
+    background: rgb(255, 192, 203);
+}
+
+#nota{   /*Iamgen del diagrama de negocio*/
+    width: 45%;
+    float: left;
+    margin: 0px 50px 0px 0px;
+}
+/*Cambio a tabla*/
+table{   /*Alineacion para la tabla */
+    float: right;
+    width: 45%;
+}
+table,td,th{   /*Tamaño de los bordes de la tabla*/
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin: 0px 50px 0px 0px;
+}
+
+#ka{  /*Seccion de analisis*/
+    background-color: rgba(25, 233, 25, 0.87);
+    align-items: center;
+}
+#ko{ /*Seccion de diseño*/
+    background-color:  orange;
+}
+#ke{/*Seccion de desarrollo*/
+    background-color: rgba(25, 233, 25, 0.87);
+}
+#hora{ /*Seccion de implementacion*/
+    background-color: orange;
+}
+#rel{  /*Seccion de prueba*/
+    background-color: rgba(25, 233, 25, 0.87);
+}

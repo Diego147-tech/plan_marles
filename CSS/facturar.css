@@ -1,0 +1,45 @@
+header{  /*Cabezera de decoracion */
+    background-color: rgba(230, 21, 21, 0.87);
+    padding: 50px 30px;
+    margin: -15px -15px 40px -15px;
+}
+
+#fat{  /*Cuadro de cuerpo en general*/
+    margin-left: 20%;
+    font-family: Geneva;
+}
+
+h1{  /*Titulos principales*/
+    color: rgb(78, 78, 187);
+    margin-left: -50px;
+    font-size: 50px;
+}
+
+h2{   /* Subtitulos principales*/
+    font-size: 25px;
+}
+
+#valor{  /*Cuadro de cuerpo para resultados*/
+    margin-left: 40%;
+    margin-top: -40%;
+}
+
+#liz, #loz{  /*Botones*/
+    font-family: 'Times New Roman';
+    border-radius: 90px;
+    background-color: rgba(128, 128, 128, 0.534);
+    color: black;
+    text-align: center;
+    font-size: 20px;
+    margin-left: 8px;
+}
+
+#loz{ /*Acomodar Boton*/
+    margin-top: 8px;
+}
+
+#liz:hover, #loz:hover{  /* Decoracion del boton*/
+    background-color: transparent;
+    border: 2px solid black;
+    color: black;
+}
