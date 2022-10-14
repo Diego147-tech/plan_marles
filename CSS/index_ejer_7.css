@@ -1,0 +1,140 @@
+*{
+    padding: 1;
+    margin: 1;
+}
+
+
+/* UBICACION Y CONTENIDO DEL CUERPO */
+.container_cuerpo{
+    margin: 1px;
+    padding: 10px;
+}
+article{
+    grid-area: cuerpo;
+    background-color: aliceblue;
+}
+
+header{
+    grid-area: header;
+    background-color: rgb(96, 168, 231);
+}
+
+
+.contenido1{
+    grid-area: contenido1;
+    background-color: rgb(30, 122, 202);
+}
+
+.contenido2{
+    grid-area: contenido2;
+    background-color: rgb(30, 122, 202);
+}
+
+.menus{
+    grid-area: menus;
+    background-color: red;
+}
+footer{
+    grid-area: footer;
+
+}
+
+
+/* DECORACION DEL HTML */
+
+header img{
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+header{
+    height: 150px;
+}
+h1,h2{
+    font-size: 30px;
+    font-family: Verdana;
+    margin: -70px 0px 0px 200px;
+}
+
+
+p{
+    border-radius: 18px;
+    padding: 30px 45px;
+    font-size: 25px;
+}
+
+aside ul{
+    list-style: none;
+    height: 80px;
+    font-size: 38px;
+    font-family: Tahoma;
+    margin: 40px 0px 0px -10px;
+
+}
+
+aside li{
+    display: inline;
+    margin: 20px 0px 0px 30px;
+}
+
+aside a{
+    text-decoration: none;
+    color: black;
+}
+
+aside a:hover{
+    text-decoration: none;
+    color: rgb(110, 110, 233);
+}
+
+footer{
+    height: 150px;
+    background-image: url(/img/footer_img.png);
+}
+
+footer img{
+    width: 17%;
+    margin: 10px 0px 0px 0px;
+}
+
+/* UBICACION DEL CUERPO DEL HTML(RESPONSIVE) */
+
+.container_cuerpo{
+    display: grid;
+    gap: 10px;
+    grid-template-areas: 
+
+    "cuerpo"
+    ;
+  
+}
+
+.cuerpo{
+    display: grid;
+    gap: 10px;
+    grid-template-areas: 
+
+    "header"
+    "contenido1"
+    "contenido2"
+    "menus"
+    "footer"
+    ;
+}
+@media (min-width: 1080px){
+    .container_cuerpo{
+         grid-template: 
+        "cuerpo cuerpo cuerpo" 900px /
+        auto;
+    }
+
+    .cuerpo{
+        grid-template: 
+        "header header header" 400px
+        "contenido1 contenido1" 280px
+        "contenido2 contenido2" 280px
+        "menus menu menus menus" 280px
+        "footer footer footer" 180px /
+        auto;
+    }
+}

@@ -1,0 +1,124 @@
+*{
+    box-sizing: border-box;
+    padding: 1;
+    margin: 1;
+}
+/* UBICACIONES DEL CUERPO DEL TRABAJO */
+body{
+    background-color: beige;
+}
+
+.grid-container >*{
+    border: 1px;
+    box-shadow: -1px 3px 4px 1px rgba(14, 13, 13, 0.493);
+}
+header{
+    grid-area: header;
+    background-color: rgba(223, 223, 233, 0.781);
+}
+
+nav{
+    grid-area: nav;
+    background-color: rgba(31, 231, 238, 0.877);
+    border-radius: 10px;
+}
+
+.main1{
+    grid-area: main1;
+    background-color: rgba(201, 196, 188, 0.685);
+    border-radius: 20px;
+}
+.main2{
+    grid-area: main2;
+    background-color: rgba(201, 196, 188, 0.685);
+    border-radius: 20px;
+}
+.main3{
+    grid-area: main3;
+    background-color: rgba(201, 196, 188, 0.685);
+    border-radius: 20px;
+}
+
+footer{
+    grid-area: footer;
+    background-color: brown;
+}
+
+
+
+/* ESTILO PARA EL CUERPO DEL HTML */
+header img{
+    width: 12%;
+    margin: 18px 0px 0px 40px;
+}
+footer img{
+    width: 20%;
+}
+
+footer{
+    background-image: url(/img/footer_img.png);
+}
+
+h2{
+    font-size: 40px;
+}
+.nav{
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.nav a{
+    text-decoration: none;
+}
+.nav ul{
+    list-style: none;
+}
+
+.nav ul li{
+    margin: 10px 0px 0px -70px;
+    text-align: center;
+}
+.main1, .main2, .main3{
+    font-size: 20px;
+    font-family: sans-serif;
+    text-align: center;
+    padding: 1px 1px;
+}
+h1{
+    font-family: verdana;
+}
+.main2 p{
+    margin-top: 30px;
+}
+.main3 h1, p{
+    margin-top: -0px;
+}
+
+
+
+
+/* UBICACION DEL CUERPO DEL HTML(RESPONSIVE) */
+.grid-container{
+      display: grid;
+      gap: 10px;
+      grid-template-areas: 
+      "header"
+      "nav"
+      "main1"
+      "main2"
+      "main3"
+      "footer"
+      ;
+}
+
+@media (min-width: 1080px){
+     .grid-container{
+        grid-template:
+        "header header header" 200px
+        "nav main1 main1" 250px
+        "nav main2 main2" 250px
+        "nav main3 main3" 260px
+        "footer footer footer" 200px  /
+        320px auto 320px; 
+     }
+}

@@ -1,0 +1,249 @@
+*{
+    margin: 5px;
+    padding: 0;
+}
+
+/* UBICACIONES DEL CUERPO DEL TRABAJO */
+.header{
+    grid-area: header;
+    background-color: whitesmoke;
+    box-shadow: 1px 3px 5px 1px black;
+}
+.nav1{
+    grid-area: nav1;
+    background-color: green;
+    box-shadow: 1px 3px 5px 1px black;
+
+}
+.nav2{
+    grid-area: nav2;
+    background-color: rgb(231, 77, 21);
+    box-shadow: 1px 3px 5px 1px black;
+}
+.main1{
+    grid-area: main1;
+    background-color: whitesmoke;
+}
+.main2{
+    grid-area: main2;
+    background-color: whitesmoke;
+}
+.sidebar{
+    grid-area: sidebar;
+    background-color: rgb(231, 77, 21);
+    box-shadow: 1px 3px 5px 1px black;
+}
+.footer{
+    grid-area: footer;
+    background-color: aqua;
+}
+
+/* Ubicacion de los espacios dentro del texto */
+.menu_seccion_1{
+    grid-area: menu_seccion_1;
+    background-color: rgb(190, 184, 184);
+    border-radius: 20px;
+    box-shadow: 1px 3px 5px 1px black;
+}
+
+.art1{
+    grid-area: art1;
+    background-color: rgb(190, 184, 184);
+    border-radius: 20px;
+    box-shadow: 1px 3px 5px 1px black;
+}
+
+.menu_seccion_2{
+    grid-area: menu_seccion_2;
+    background-color: rgb(190, 184, 184);
+    border-radius: 20px;
+    box-shadow: 1px 3px 5px 1px black;
+}
+
+.art2{
+    grid-area: art2;
+    background-color: rgb(190, 184, 184);
+    border-radius: 20px;
+    box-shadow: 1px 3px 5px 1px black;
+}
+
+
+
+/* DISEÑO DEL HTML */
+
+.nav1 ul{
+    list-style: none;
+    font-family: Tahoma;
+    font-size: 35px;
+    margin: 21px 0px 0px 0px;
+    text-align: center;
+}
+
+.nav1 li{
+    display: inline;
+    margin-right: 25px;
+}
+
+.nav1 a{
+    text-decoration: none;
+    color: black;
+}
+
+.nav1 a:hover{
+    text-decoration: none;
+    color: rgb(230, 147, 40);
+}
+
+.nav2 ul{
+    list-style: none;
+    font-family: Tahoma;
+    font-size: 35px;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.nav2 li{
+    margin: 60px 0px 0px 5px;
+}
+
+.nav2 a{
+    text-decoration: none;
+    color: black;
+}
+.nav2 a:hover{
+    text-decoration: none;
+    color: white;
+}
+
+.sidebar ul{
+    list-style: none;
+    font-family: Tahoma;
+    font-size: 35px;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.sidebar li{
+    margin: 60px 0px 0px 5px;
+}
+
+.sidebar a{
+    text-decoration: none;
+    color: black;
+}
+.sidebar a:hover{
+    text-decoration: none;
+    color: white;
+}
+
+.art1 p, .art2 p{
+    padding: 20px 50px;
+    text-align: justify;
+    font-family: Tahoma;
+    font-size: 18px;
+}
+
+.art1 h1, .art2 h1{
+    text-align: center;
+    font-family: Verdana;
+    font-size: 30px;
+    margin-top: 30px;
+    padding: 0px 7px;
+}
+
+.menu_seccion_1 ul, .menu_seccion_2 ul{
+    font-size: 30px;
+    list-style: none;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.menu_seccion_1 li, .menu_seccion_2 li{
+    margin: 30px 0px 0px 0px;
+}
+
+.menu_seccion_1 a, .menu_seccion_2 a{
+    text-decoration: none;
+    color: black;
+}
+
+.menu_seccion_1 a:hover, .menu_seccion_2 a:hover{
+    text-decoration: none;
+    color: red;
+}
+
+
+header h1{
+    margin-top: -120px;
+    margin-left: 150px;
+    font-family: Verdana;
+}
+
+
+footer{
+    background-image: url(/img/footer_img.png);
+}
+footer img{
+    width: 20%;
+    margin-top: 14px;
+}
+
+
+
+
+
+/* UBICACION DEL CUERPO DEL HTML(RESPONSIVE) */
+.grid-container{
+    display: grid;
+    gap: 10px;
+    grid-template-areas: 
+    "header"
+    "nav1"
+    "nav2"
+    "main1"
+    "main2"
+    "sidebar"
+    "footer";
+}
+
+.main1{
+    display: grid;
+    gap: 10px;
+    grid-template-areas: 
+    "art1"
+    "menu_seccion_1"
+    ;
+}
+
+.main2{
+    display: grid;
+    gap: 10px;
+    grid-template-areas: 
+    "art2"
+    "menu_seccion_2"
+    ;
+}
+@media (min-width: 1200px){
+    .grid-container{
+        grid-template: 
+        "header header header header header" 140px
+        "nav1 nav1 nav1 nav1 nav1" 100px
+        "nav2 main1 main1 main1 sidebar" 500px
+        "nav2 main2 main2 main2 sidebar" 650px
+        "footer footer footer footer footer" 200px /
+        250px auto 700px;
+    }
+
+
+    .main1{
+        grid-template: 
+        "art1 art1 menu_seccion_1" 500px
+        ;
+    }
+
+    .main2{
+        grid-template: 
+        "art2 art2 menu_seccion_2" 630px
+        ;
+    }
+}

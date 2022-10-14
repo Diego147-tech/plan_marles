@@ -1,0 +1,143 @@
+*{
+    padding: 1;
+    margin: 1;
+}
+
+
+/* UBICACIONES DENTRO DE LA WEB */
+.container_cuerpo >*{
+    box-shadow: 1px 3px 6px 4px black;
+    padding: 10px;
+}
+
+nav{
+    grid-area: menu;
+    background-color: aliceblue;
+}
+
+header{
+    grid-area: header;
+    background-color: rgb(94, 165, 228);
+}
+.sect1{
+    grid-area: sect1;
+    background-color: aliceblue;
+}
+.sect2{
+    grid-area: sect2;
+    background-color: rgb(94, 165, 228);
+}
+.sect3{
+    grid-area: sect3;
+    background-color: rgb(94, 165, 228);
+}
+
+footer{
+    grid-area: footer;
+    background-color: aliceblue;
+}
+
+
+/* DECORACION DEL HTML */
+nav img{
+    width: 9%;
+    margin: -70px 0px 0px 10px;
+}
+.menu1 ul{
+    list-style: none;
+    font-size: 30px;
+    font-family: Tahoma;
+    margin: 15px 0px 0px 80px;
+}
+
+.menu1 li{
+   display: inline;
+   margin-left: 40px;
+}
+
+.menu1 a{
+   text-decoration: none;
+   color: black;
+}
+
+.menu1 a:hover{
+   text-decoration: none;
+   color: grey;
+}
+
+header img{
+    width: 101.5%;
+    height: 111%;
+    margin: -9px 0px 0px -10px;
+}
+
+.sect1{
+    font-family: Tahoma;
+    font-size: 20px;
+    padding: 20px 40px;
+    text-align: justify;
+}
+
+#comentario{
+    margin: -200px 0px 0px 400px;
+    font-size: 18px;
+}
+
+.sect2{
+    
+    padding: 20px 40px;
+    text-align: justify;
+    font-size: 18px;
+    font-family: Tahoma;
+}
+
+.sect3{
+    
+    padding: 20px 40px;
+    text-align: justify;
+    font-size: 18px;
+    font-family: Tahoma;
+}
+
+h2{
+    font-family: Verdana;
+    font-size: 30px;
+}
+
+footer{
+    background-image: url(/img/footer_img.png);
+}
+
+footer img{
+    width: 15%;
+    margin: 5px 0px 0px 0px;
+}
+
+
+
+
+
+/* UBICACION DEL CUERPO DEL HTML(RESPONSIVE) */
+.container_cuerpo{
+    display: grid;
+    gap: 10px;
+    grid-template-areas: 
+    "header"
+    "menu"
+    "sect1" 
+    "sect2"
+    "sect3"
+    "footer"
+    ;
+}
+@media (min-width: 1080px){
+    .container_cuerpo{
+        grid-template: 
+        "menu menu menu menu" 90px
+        "header header header header" 180px
+        "sect1 sect1 sect1 sect1" 580px
+        "sect2 sect2 sect3 sect3" 380px
+        "footer footer footer footer" 150px /
+        250px auto 250px;
+    }
+}

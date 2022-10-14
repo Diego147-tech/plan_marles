@@ -1,0 +1,218 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* UBICACIONES DEL CUERPO DEL TRABAJO */
+.contenedor_cuerpo >*{
+    border-radius: 4px;
+    padding: 10px;
+}
+
+header{
+    grid-area: header;
+    background-color: rgb(179, 172, 172);
+}
+
+section{
+    grid-area: main;
+}
+
+footer{
+    grid-area: footer;
+    background-color: black;
+}
+
+.menu1{
+    grid-area: menu1;
+    background-color:  wheat;
+}
+.sect1{
+    grid-area: sect1;
+    background-color: wheat;
+}
+.lok{
+    grid-area: lok;
+    background-color: wheat;
+}
+
+.texto{
+    grid-area: texto;
+    background-color: wheat;
+}
+
+/* ESTILO Y DECORACION DEL HTML */
+header img{
+    width: 100%;
+    height: 100%;
+    margin: -2px -2px -2px -2px;
+}
+footer img{
+    width: 10%;
+    margin: 20px 0px 0px 45px;
+}
+
+footer{
+    background-image: url(/img/footer_img.png);
+}
+
+.menu1 ul{
+     list-style: none;
+     font-size: 40px;
+     font-family: Tahoma;
+     margin: 18px 0px 0px 80px;
+}
+
+.menu1 li{
+    display: inline;
+    margin-left: 24px;
+}
+
+.menu1 a{
+    text-decoration: none;
+    color: black;
+}
+
+.menu1 a:hover{
+    text-decoration: none;
+    color: grey;
+}
+
+.texto{
+    width: 66.5%;
+    text-align: justify;
+    padding: 40px 70px;
+    font-family: Tahoma;
+}
+
+.texto h1{
+    font-family: Verdana;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.lok{
+    margin-left: -400px;
+}
+
+.lok ul{
+    font-size: 40px;
+    text-align: center;
+    font-family: Tahoma;
+}
+
+.lok a{
+    text-decoration: none;
+    color: black;
+}
+
+
+/* SECCION DECORACION DE SLIDER */
+.slider{
+    margin-top: 0px;
+}
+
+.navbar {
+    margin-block-start: -6px;
+    grid-area: navbar;
+}
+
+.slider {
+    text-align: center;
+    overflow: hidden;
+}
+
+#imagenes {
+    margin: 0;
+    left: 0;
+    display: flex;
+    width: 500%;
+    height: 100%;
+    animation: 15s slidy infinite alternate linear;
+    animation-timing-function: step-start;
+}
+
+li {
+    width: 100%;
+    list-style-type: none;
+}
+
+img {
+    object-fit: cover;
+    width: 100%;
+    height: 60%;
+    border-radius: 4px;
+}
+
+@keyframes slidy {
+    0% {
+        margin-left: 0;
+    }
+    20% {
+        margin-left: 0;
+    }
+    40% {
+        margin-left: -100%;
+    }
+    60% {
+        margin-left: -100%;
+    }
+    70% {
+        margin-left: -200%;
+    }
+    80% {
+        margin-left: -200%;
+    }
+    90% {
+        margin-left: -300%;
+    }
+    100% {
+        margin-left: -400%;
+    }
+}
+
+
+
+
+/* UBICACION DEL CUERPO DEL HTML(RESPONSIVE) */
+.contenedor_cuerpo{
+    display: grid;
+    gap: 10px;
+    grid-template-areas:
+    "header"
+    "main"
+    "footer"
+    ;
+}
+
+.main{
+    display: grid;
+    gap: 10px;
+    grid-template-areas:
+    "lok"
+    "menu1"
+    "sect1"
+    "texto"
+    ;
+}
+
+@media (min-width: 1080px){
+    .contenedor_cuerpo{
+        grid-template: 
+        "header header header" 220px
+        "main main main" 980px
+        "footer footer footer" 200px /
+        250px auto 250px;
+    }
+
+    .main{
+        grid-template:
+        "menu1 menu1 menu1" 100px
+        "sect1 sect1 sect1" 490px  
+        "texto lok lok" 300px  
+        ;
+    }
+}
